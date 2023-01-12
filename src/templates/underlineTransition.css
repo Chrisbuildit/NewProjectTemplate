@@ -1,0 +1,13 @@
+a::after {
+    display: block;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #D84282;
+    transition: width .35s ease-in-out;
+}
+
+a:hover::after {
+    /* alle andere properties worden behouden, we overschrijven alléén de width property */
+    width: 100%;
+}
